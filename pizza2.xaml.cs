@@ -232,7 +232,19 @@ namespace classpro
         private void Check_Click(object sender, RoutedEventArgs e)
         {
             
-            Total = (double.Tamount * 13) / 100;
+             double total = 0;
+                double hst = 0;
+                double totaldue = 0;
+
+              
+
+                hst = total * 0.13;
+                totaldue = hst + total;
+
+                string hstDisplay = hst.ToString("");
+                string totalDisplay = totaldue.ToString("");
+                string amount = total.ToString("");
+
         }
     }
 }
